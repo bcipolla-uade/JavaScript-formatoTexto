@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>REGISTRO</title>
+
+  <link rel="stylesheet" href="estilos.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="script.js" defer></script>
+  <link rel="icon" href="img/contrasena.png" type="image/png">
+</head>
+<body>
+
+  <header>
+    <h1 id="saludo"></h1>
+  </header>
+
+  <main id="contenido-principal">
+    <div id="formulario-container">
+        <h2>Ingresa tus datos</h2>
+        <form id="formulario" class="form-contacto" novalidate>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <div id="error-nombre" class="error-message">Por favor, ingresa tu nombre.</div>
+
+            <label for="edad">Edad:</label>
+            <input type="number" id="edad" name="edad" required>
+            <div id="error-edad" class="error-message">Por favor, ingresa tu edad.</div>
+
+            <label for="fecha-nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+            <div id="error-fecha-nacimiento" class="error-message">Por favor, ingresa tu fecha de nacimiento.</div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <section id="mensaje" class="oculto">
+        <h3>¡Hola, <span id="nombre-usuario"></span>!</h3>
+        <p>Has vivido <span id="dias-vividos"></span> días en este mundo. ¡Sigue sumando!</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Proyecto JavaScript | Todos los derechos reservados.</p>
+  </footer>
+
+</body>
+</html>
